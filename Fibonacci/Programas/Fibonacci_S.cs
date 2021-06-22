@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Programas
@@ -7,18 +7,18 @@ namespace Programas
     {
         static void Main(string[] args){
 
-			Console.WriteLine("Secuencia Fibonacci");
-			Console.WriteLine();
+		Console.WriteLine("Secuencia Fibonacci");
+		Console.WriteLine();
 			
-			foreach(int numero in Fibonacci(20)){
+		foreach(int numero in Fibonacci(20)){
 			
-				Console.WriteLine(numero);
+			Console.WriteLine(numero);
 				
-			}
+		}
 
         }
 	
-		public static IEnumerable<int> Fibonacci(int x){
+	public static IEnumerable<int> Fibonacci(int x){
 			
     		int num1 = -1;
     		int num2 = 1;
@@ -31,7 +31,7 @@ namespace Programas
        			yield return suma;
     		}
 			
-			yield break;
-		}
+		yield break;
+	}
     }
 }
